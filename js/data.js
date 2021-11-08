@@ -2,6 +2,10 @@
 
 //Partendo dalla struttura dati fornita, visualizzare in pagina un box per ogni icona, in cui è presente il nome dell’icona e l’icona stessa. => ciclo forEach => ok
 
+//seconda parte
+
+//Far colorare l'immagin in base al colore richiesto 
+
 const stamp = document.getElementById("stampa");
 
 const icons = [
@@ -121,10 +125,56 @@ const icons = [
 
 icons.forEach((element) => {
 
-	stamp.innerHTML += `
-		<div class="card">
-			<i class=" ${element.family} ${element.prefix}${element.name}"></i>
-			<span>${element.name}</span>
-		</div>
-	`
+	if(element.type === 'animal') {
+		stamp.innerHTML += `
+			<div class="card">
+				<div class="color color-animal" >
+					<i class=" ${element.family} ${element.prefix}${element.name}"></i>
+				</div>
+				<span>${element.name}</span>
+			</div>
+		`
+	}else if(element.type === 'vegetable'){
+		stamp.innerHTML += `
+			<div class="card">
+				<div class="color color-veg" >
+					<i class=" ${element.family} ${element.prefix}${element.name}"></i>
+				</div>
+				<span>${element.name}</span>
+			</div>
+		`
+	}else {
+		stamp.innerHTML += `
+			<div class="card">
+				<div class="color color-user" >
+					<i class=" ${element.family} ${element.prefix}${element.name}"></i>
+				</div>
+				<span>${element.name}</span>
+			</div>
+		`
+	}
+
+	
 });
+
+// document.getElementsByClassName("color")[0].classList.add("color-animal")
+
+
+// const animalColor = icons.filter((colors) => {
+// 	return colors.type === 'animal';
+// });
+
+// console.log(animalColor);
+
+// const vegColor = icons.filter((colors) => {
+// 	return colors.type === 'vegetable';
+// });
+
+// console.log(vegColor);
+
+// const userColor = icons.filter((colors) => {
+// 	return colors.type === 'user';
+// });
+
+// console.log(userColor);
+

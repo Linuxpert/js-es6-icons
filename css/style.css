@@ -48,7 +48,8 @@ body {
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    width: 240px;
+    /* width: 240px; */
+    width: calc(100% / 6);
     height: 100px;
     margin: 30px 60px 70px 20px;
     
@@ -56,5 +57,19 @@ body {
 
 .fas {
     font-size: 48px;
+}
+
+/* colori */
+
+.color-animal {
+    color: orange;
+}
+
+.color-veg {
+    color: green;
+}
+
+.color-user {
+    color: blue;
 }
 

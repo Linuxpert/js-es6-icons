@@ -157,24 +157,4 @@ icons.forEach((element) => {
 	
 });
 
-// document.getElementsByClassName("color")[0].classList.add("color-animal")
-
-
-// const animalColor = icons.filter((colors) => {
-// 	return colors.type === 'animal';
-// });
-
-// console.log(animalColor);
-
-// const vegColor = icons.filter((colors) => {
-// 	return colors.type === 'vegetable';
-// });
-
-// console.log(vegColor);
-
-// const userColor = icons.filter((colors) => {
-// 	return colors.type === 'user';
-// });
-
-// console.log(userColor);
 

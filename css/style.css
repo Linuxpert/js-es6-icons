@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html statico */
+body {
+    background-color: lightgray;
+}
+
+.titolo {
+    background-color: white;
+}
+.titolo h1{
+    font-size: 50px;
+    color: rgb(38, 180, 228);
+}
+
+.filtro {
+    display: flex;
+    background-color: rgb(38, 180, 228);
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.filtro h3 {
+    color: white;
+}
+
+#stampa {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* box card */
+
+.sfondo {
+    background-color: lightgray;
+}
+
+
+.card {
+    display: flex;
+    background-color: rgb(253, 245, 245);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 100px;
+    margin: 30px 60px 70px 20px;
+    
+}
+
+.fas {
+    font-size: 48px;
+}
+
